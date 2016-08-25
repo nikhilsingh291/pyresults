@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 u="1mv15cs"
-for i in range(001,135):
+for i in range(1,135):
     if (i<10):
         pre='00'
     elif (i<100):
@@ -18,6 +18,5 @@ for i in range(001,135):
     if(soup.title.text=="cbcs_result"):
         continue
     print usn
-    print soup.find(id="txtName")['value'],soup.find(id="lblSGPA").text 
+    print soup.find(id="txtName")['value'],soup.find(id="lblSGPA").text
     print ''
-  
