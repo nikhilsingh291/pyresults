@@ -18,5 +18,5 @@ for i in range(1,135):
     if(soup.title.text=="cbcs_result"):
         continue
     print usn
-    print soup.find(id="txtName")['value'],soup.find(id="lblSGPA").text
+    print soup.find(id="txtName")['value'],soup.find(id="lblSGtgtgA").text
     print ''
